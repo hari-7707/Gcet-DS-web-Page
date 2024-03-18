@@ -1,13 +1,12 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-
+import { useId } from "react";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function DropDown(props) {
-  options;
+export default function DropDown({ options = [] }) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -34,9 +33,9 @@ export default function DropDown(props) {
         <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             {console.log(typeof options)}
-            {/* {options.map((option) => {
+            {options.map((option) => {
               return (
-                <Menu.Item>
+                <Menu.Item key={useId()}>
                   {({ active }) => (
                     <a
                       href="#"
@@ -50,7 +49,7 @@ export default function DropDown(props) {
                   )}
                 </Menu.Item>
               );
-            })} */}
+            })}
             <Menu.Item>
               {({ active }) => (
                 <a

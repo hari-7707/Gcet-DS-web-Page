@@ -2,19 +2,24 @@ import React from "react";
 import Logo from "./Logo";
 import logo from "/gcetLogo.png";
 import DropDown from "./DropDown";
+import { Button } from "@material-tailwind/react";
+
 export default function Header() {
   return (
     <>
       <header className=" bg-green-700 container py-5  text-center">
-        <div className=" grid grid-cols-12 items-center gap-1">
-          <div className="col-span-1">
-            <Logo className="h-full w-full" src={logo}></Logo>
+        <div className="  items-center gap-1">
+          {/* grid grid-cols-12 */}
+          <div className="">
+            {/* col-span-1 */}
+            <Logo className="h-20 w-20" src={logo}></Logo>
           </div>
-          <div className="col-span-10 text-white tracking-wide">
-            <h1 className="sm:text-2xl text-sm font-bold font-serif ">
+          <div className=" text-white tracking-wide">
+            {/* col-span-10 */}
+            <h1 className="text-sm md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold font-serif ">
               GEETHANJALI COLLEGE OF ENGINEERING AND TECHNOLOGY
             </h1>
-            <h2 className=" sm:text-sm text-xs font-bold ">
+            <h2 className="text-[.5rem] md:text-[.5rem] lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
               (UGC Autonomous, Permanently Affiliated to JNTUH, Accredited by
               NAAC with 'A+' grade)
             </h2>
@@ -49,7 +54,7 @@ export default function Header() {
           <DropDown options={["a", "b", "c", "d"]}></DropDown>
           <DropDown></DropDown>
           <DropDown></DropDown>
-          <DropDown></DropDown>
+          <Button>Button</Button>
           <DropDown></DropDown>
           <DropDown></DropDown>
           <DropDown></DropDown>

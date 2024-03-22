@@ -13,19 +13,13 @@ import { CursorArrowRaysIcon } from "@heroicons/react/24/solid";
 
 const menuItems = [
   {
-    title: "@material-tailwind/html",
-    description:
-      "Learn how to use @material-tailwind/html, packed with rich components and widgets.",
+    title: "option 1",
   },
   {
-    title: "@material-tailwind/react",
-    description:
-      "Learn how to use @material-tailwind/react, packed with rich components for React.",
+    title: "option 2",
   },
   {
-    title: "Material Tailwind PRO",
-    description:
-      "A complete set of UI Elements for building faster websites in less time.",
+    title: " option 3",
   },
 ];
 
@@ -49,18 +43,15 @@ export default function DropDown({ setOpenNav, openNav }) {
         </Button>
       </MenuHandler>
 
-      <MenuList className="grid-cols-7 gap-3 overflow-visible lg:grid bg-white">
-        <ul className="col-span-4 flex w-full flex-col gap-1 ">
+      <MenuList className="bg-white">
+        <ul className="col-span-4 flex flex-col gap-1 ">
           {menuItems.map(({ title, description }) => (
-            <a href="#" key={title}>
+            <a href="https://github.com/" key={title}>
               <MenuItem
                 onClick={() => {
-                  console.log("in menuList ");
                   if (openNav) {
                     setOpenNav(!openNav);
                   }
-
-                  console.log("in menuList ", openNav);
                 }}
               >
                 <Typography variant="h6" color="blue-gray" className="mb-1">

@@ -57,13 +57,6 @@ export default function DropDown({ setOpenNav, openNav }) {
                 <Typography variant="h6" color="blue-gray" className="mb-1">
                   {title}
                 </Typography>
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="font-normal"
-                >
-                  {description}
-                </Typography>
               </MenuItem>
             </a>
           ))}

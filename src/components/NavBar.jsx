@@ -22,18 +22,18 @@ export default function StickyNavbar() {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:grid lg:grid-cols-12 lg:items-center lg:gap-2 flex-wrap ">
-      <DropDown openNav setOpenNav></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
-      <DropDown></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
     </ul>
   );
 
@@ -83,7 +83,21 @@ export default function StickyNavbar() {
             </IconButton>
           </div>
         </div>
-        <Collapse open={openNav}>{navList}</Collapse>
+        <Collapse open={openNav} className=" grid grid-cols-3">
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+          {/* {navList} */}
+        </Collapse>
       </Navbar>
     </div>
   );

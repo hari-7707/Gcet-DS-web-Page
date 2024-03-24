@@ -170,7 +170,7 @@ export default function NavBar() {
   );
 
   return (
-    <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-0 border-none bg-blue-50 shadow-none backdrop-saturate-1 mt-2">
+    <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-0 border-none  bg-inherit shadow-none backdrop-saturate-1 mt-2">
       <div className="text-left">
         <div className="hidden lg:block">{navList}</div>
         <IconButton

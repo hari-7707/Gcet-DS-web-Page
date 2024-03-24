@@ -1,10 +1,10 @@
-export default function Logo({ classname, src, props }) {
+export default function Logo({ className, src, props }) {
   return (
     <>
       <img
         src={src}
         alt="GCET LOGO"
-        className={`rounded-full ${classname}`}
+        className={`rounded-full ${className}`}
         {...props}
       />
     </>

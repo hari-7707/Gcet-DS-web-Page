@@ -10,10 +10,10 @@ import NavBar from "./NavBar";
 export default function Header() {
   return (
     <>
-      <header className="w-full bg-blue-50 py-4 px-10 text-center">
+      <header className="w-full  bg-blue-50 py-4 px-10 text-center">
         <div className="flex items-center justify-center text-black  md:gap-5 gap-2">
           <div className="w-1/12 flex justify-center items-center">
-            <Logo classname="size-full" src={gcetLogo}></Logo>
+            <Logo className="size-full" src={gcetLogo}></Logo>
           </div>
           <div className="w=11/12">
             <h1 className=" tracking-wide text-[.68rem] sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold font-serif ">
@@ -39,21 +39,21 @@ export default function Header() {
         </div>
         <div className="flex justify-evenly mt-6">
           <div className="">
-            <Logo classname="size-12" src={AICTELogo}></Logo>
+            <Logo className="size-12" src={AICTELogo}></Logo>
           </div>
           <div className="">
-            <Logo classname="size-12" src={JNTUHLogo}></Logo>
+            <Logo className="size-12" src={JNTUHLogo}></Logo>
           </div>
 
           <div className="">
-            <Logo classname="size-12" src={NAACLogo}></Logo>
+            <Logo className="size-12" src={NAACLogo}></Logo>
           </div>
           <div className="flex items-center justify-center">
             {" "}
-            <Logo classname="size-12" src={nirfLogo}></Logo>
+            <Logo className="size-12" src={nirfLogo}></Logo>
           </div>
           <div className="">
-            <Logo classname="size-12 bg-white" src={NBALogo}></Logo>
+            <Logo className="size-12 bg-white" src={NBALogo}></Logo>
           </div>
         </div>
 

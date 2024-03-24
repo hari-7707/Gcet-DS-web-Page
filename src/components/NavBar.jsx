@@ -10,7 +10,7 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 
-export default function StickyNavbar() {
+export default function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -40,7 +40,7 @@ export default function StickyNavbar() {
   return (
     <div className="">
       {/* overflow-scroll  for side sliders */}
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-0 border-none bg-green-700 shadow-none backdrop-saturate-1">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-0 border-none bg-white-700 shadow-none backdrop-saturate-1">
         <div className="flex items-center justify-between text-blue-gray-900">
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>

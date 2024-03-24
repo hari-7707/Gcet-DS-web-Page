@@ -1,14 +1,6 @@
 import React from "react";
 import DropDown from "./DropDown";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-  Card,
-  Collapse,
-} from "@material-tailwind/react";
+import { Navbar, IconButton, Collapse } from "@material-tailwind/react";
 
 export default function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -21,84 +13,205 @@ export default function NavBar() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:grid lg:grid-cols-12 lg:items-center lg:gap-2 flex-wrap ">
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-      <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
+    <ul className="lg:my-4 lg:flex lg:flex-wrap grid grid-cols-2 text-center justify-center items-center ">
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Home"}
+        options={[
+          { title: "Vision and Mission", url: "" },
+          { title: "PEOs PSOs and POs", url: "" },
+          { title: "Salient Features of the Department", url: "" },
+          { title: "Messages", url: "" },
+          { title: "Board of Studies", url: "" },
+          { title: "Approvals", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Staff Desk"}
+        options={[
+          { title: "Faculty and Staff List", url: "" },
+          { title: "Roles and Responsibilities", url: "" },
+          { title: "Enrichment of Skills", url: "" },
+          { title: "Faculty as Resource Persons", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Student Desk"}
+        options={[
+          { title: "Instructions Grievances", url: "" },
+          { title: "Student Nominal Rolls", url: "" },
+          { title: "Student Achievements", url: "" },
+          { title: "Academic Toppers", url: "" },
+          { title: "Higher Education and BEC", url: "" },
+          { title: "Training and Placement", url: "" },
+          { title: "Placements", url: "" },
+          { title: "Student Clubs", url: "" },
+          { title: "CACHE", url: "" },
+          { title: "Learning Resources", url: "" },
+          { title: "Department Library", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Research"}
+        options={[
+          { title: "Research and Consultancy Policy", url: "" },
+          { title: "Research Activities", url: "" },
+          { title: "Research Initiatives", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Academics"}
+        options={[
+          { title: "Regulations and Syllabus", url: "" },
+          { title: "Academic Calendars", url: "" },
+          { title: "Academic Activities Carried Out", url: "" },
+          { title: "Industry-institute interaction", url: "" },
+          { title: "Major Projects", url: "" },
+          { title: "Mini Projects", url: "" },
+          { title: "Internships", url: "" },
+          { title: "Industrial Visits", url: "" },
+          { title: "Professional Bodies", url: "" },
+          { title: "TechExpo", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"TLP"}
+        options={[
+          { title: "Work Load and Additional duties", url: "" },
+          { title: "Time Tables", url: "" },
+          { title: "Result Analysis", url: "" },
+          { title: "Innovations In Teaching", url: "" },
+          { title: "Project Based Learning", url: "" },
+          { title: "Value Added Courses", url: "" },
+          { title: "Specialized Groups", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Labs"}
+        options={[
+          { title: "List of Laboratories", url: "" },
+          { title: "Software", url: "" },
+          { title: "Equipment Purchased", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Centers of Excellence"}
+        options={[]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Reports"}
+        options={[
+          { title: "Techno Digest - News Letter", url: "" },
+          { title: "Department Reports", url: "" },
+          { title: "Strategic Plan", url: "" },
+          { title: "MoUs and MoMs", url: "" },
+        ]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Alumni"}
+        options={[]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Central Facilities"}
+        options={[{ title: "NSS", url: "" }]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"CO-PO Attainments"}
+        options={[]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"Formats"}
+        options={[{ title: "Principal's Zone", url: "" }]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"IQAC"}
+        options={[]}
+      ></DropDown>
+      <DropDown
+        openNav={openNav}
+        setOpenNav={setOpenNav}
+        name={"More"}
+        options={[
+          { title: "Curriculum Design", url: "" },
+          { title: "Contact us", url: "" },
+          { title: "NBA Documents - 2022", url: "" },
+          { title: "Events of the Dept", url: "" },
+          { title: "Gallery", url: "" },
+        ]}
+      ></DropDown>
     </ul>
   );
 
   return (
-    <div className="">
-      {/* overflow-scroll  for side sliders */}
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-0 border-none bg-white-700 shadow-none backdrop-saturate-1">
-        <div className="flex items-center justify-between text-blue-gray-900">
-          <div className="flex items-center gap-4">
-            <div className="mr-4 hidden lg:block">{navList}</div>
-            <IconButton
-              variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-              ripple={false}
-              onClick={() => setOpenNav(!openNav)}
+    <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-0 border-none bg-blue-50 shadow-none backdrop-saturate-1 mt-2">
+      <div className="text-left">
+        <div className="hidden lg:block">{navList}</div>
+        <IconButton
+          variant="text"
+          className="ml-auto h-4 w-4 text-left text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          ripple={false}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              className="h-6 w-6 text-black"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
             >
-              {openNav ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 p-0"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </IconButton>
-          </div>
-        </div>
-        <Collapse open={openNav} className=" grid grid-cols-3">
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          <DropDown openNav={openNav} setOpenNav={setOpenNav}></DropDown>
-          {/* {navList} */}
-        </Collapse>
-      </Navbar>
-    </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 p-0  text-black"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
+        </IconButton>
+        <Collapse open={openNav}>{navList}</Collapse>
+      </div>
+    </Navbar>
   );
 }

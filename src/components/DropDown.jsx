@@ -60,11 +60,12 @@ export default function DropDown({
       </MenuHandler>
 
       {options.length > 0 ? (
-        <MenuList className="bg-white">
+        <MenuList className="bg-blue-50">
           <ul className="">
             {options.map(({ title }) => (
               <a href="" key={title}>
                 <MenuItem
+                  className=" hover:bg-blue-100"
                   onClick={() => {
                     if (openNav) {
                       setOpenNav(!openNav);

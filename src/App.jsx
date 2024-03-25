@@ -11,25 +11,31 @@ export default function App() {
       <Header></Header>
       <Carousel
         transition={{ duration: 1 }}
-        className="rounded-2xl my-10 h-lvh bg-blue-gray-500 py-auto"
-        // autoplay
+        className="rounded-2xl h-lvh bg-gray-100 py-auto"
+        autoplay
         loop
       >
-        <img
-          src={g1}
-          alt="image 1"
-          className="h-3/4 w-3/4 object-cover mx-auto my-auto "
-        />
-        <img
-          src={g2}
-          alt="image 2"
-          className="h-1/2 w-1/2 object-cover mx-auto"
-        />
-        <img
-          src={g3}
-          alt="image 3"
-          className="h-1/2 w-1/2 object-cover mx-auto"
-        />
+        <div className=" flex justify-center items-center size-full">
+          <img
+            src={g1}
+            alt="image 1"
+            className=" size-3/4 object-cover mx-auto my-auto "
+          />
+        </div>
+        <div className=" flex justify-center items-center size-full">
+          <img
+            src={g2}
+            alt="image 2"
+            className="size-3/4 object-cover mx-auto my-auto"
+          />
+        </div>
+        <div className=" flex justify-center items-center size-full">
+          <img
+            src={g3}
+            alt="image 3"
+            className="size-3/4 object-cover mx-auto"
+          />
+        </div>
       </Carousel>
       <Footer></Footer>
     </>

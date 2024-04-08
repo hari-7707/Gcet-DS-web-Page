@@ -1,7 +1,5 @@
-import React from "react";
 import gcetLogo from "/gcetLogo.png";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
 import { IconButton } from "@material-tailwind/react";
 
 export default function Footer() {
